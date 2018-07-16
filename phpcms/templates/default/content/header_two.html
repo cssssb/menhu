@@ -1,0 +1,27 @@
+<div class="a1002_form">
+    <div class="a1002_centerleft">
+        <h2 class="a1002_h2">报名入口</h2>
+        <div class="col-md-3 a1002_as">
+            <a href="http://47.93.26.208:8002/" target="_blank" class="a1002_1a">项目经理培训报名</a>
+            <a href="http://47.93.26.208:8002/" target="_blank" class="a1002_2a">运维经理培训报名</a>
+            <a href="http://47.93.26.208:8002/" target="_blank" class="a1002_3a">证书查询</a>
+        </div>
+        <div class="a1003_leftbottom">
+            <h2 class="a1002_h2">行业动态</h2>
+            <!-- <div class="a1003_actimg1">
+                <img src="src/2.jpg" alt="">
+            </div>
+            <div class="a1003_actimg1">
+                <img src="src/2.jpg" alt="">
+            </div> -->
+             {pc:content  action="lists" catid="22" order="id DESC" num="4"}
+    {loop $data $key $val}
+    <div class="a1003_p5 a1003_p51">
+        <span>20{date('y-m-d',$val[inputtime])}</span>
+        <p><a href="{$val['url']}" target="_blank">{$val['title']}</a></p>
+    </div>
+ {/loop}
+               {/pc}
+        </div>
+    </div>
+</div>

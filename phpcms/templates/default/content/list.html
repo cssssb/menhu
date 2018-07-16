@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script type="text/javascript" src="{CSS_PATH}cms/js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}cms/css/yangshi.css">
+    <script type="text/javascript" src="{CSS_PATH}cms/js/jquery.pagination.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}cms/js/jquery.pagination.js">
+    <link rel="stylesheet" href="{CSS_PATH}cms/css/pagination.css">
+    <link rel="stylesheet" href="{CSS_PATH}cms/js/jquery.min.js">
+
+</head>
+
+<body>
+    <div class="big">
+        <nav class="nav">
+            <ul class="daohang">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="http://www.csst.com.cn/index.php?m=dbsource&c=call&a=get&id=9">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">服务项目</a>
+                </li>
+                <li>
+                    <a href="#">评价体系</a>
+                </li>
+                <li>
+                    <a href="#">新闻中心</a>
+                </li>
+
+            </ul>
+
+            <br />
+            <div class="top_center">
+                <img src="{CSS_PATH}cms/images/logo-02.png" alt="图片加载中" class="logo">
+
+                <span class="info1">信息系统集成及服务项目管理人员学习平台 </span>
+                <br />
+
+                <span class="info2"> sysqwetem integration and service project management learning platform</span>
+
+
+            </div>
+        </nav>
+        <hr weight:bold, color:#ccc>
+        <main class="mains">
+            <div class="clear_fl2"></div>
+            <input class="prodect2" type="search" value="项目管理颜色" size="50">
+            <button class="btn">
+                <img src="放大镜.svg" alt="">
+            </button>
+
+        </main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="banner_left"></div>
+      
+        <div class="banner_right">
+                {pc:content action="lists" relation="$relation" catid="$catid" num="20" keywords="$rs[keywords]" page="$page"}
+                {loop $data $r}
+                <h2 class="h2"><a href="{$r[url]}" target="_blank">{$r[title]}</a></h2>>
+              
+            <div class="pic1">
+                <img src="{$r[thumb]}" alt="">
+            </div>
+            <div class="M-box3 m-style">
+                    {$pages}
+            </div>
+           
+            {/loop}
+            {/pc}
+        </div>
+        <br />
+        <div class="eg">
+            <div class="m-style M-box3"></div>
+            <pre><code></code></pre>
+        </div>
+        <i class=".woff"> </i>
+        
+</body>
+
+</html>

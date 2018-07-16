@@ -1,0 +1,50 @@
+{template "content","header"}
+<hr class="a1002_hr"> {template "content","header_min"}
+<div class=" a1001_topright a2002_rightbox a3002_rightbox">
+
+    {pc:content action="lists" catid="$catid" posid="$posid" order="id DESC" num="6" moreinfo="1"} {loop $data $key $val}
+    <div class="a3002right_content1 a3002right_content2">
+        <h2>
+            <span>
+                <a href="{$val['url']}">{$val['title']}</a>
+            </span>
+        </h2>
+        {if $val['thumb'] != null}
+        <img src="{$val['thumb']}" alt="">
+        <p class="a3002right_p1">{$val['description']}
+        </p>
+        <span class="a3002right_span2">{catpos($catid)}</span>
+        {else}
+        <p class="a3002right_p2">{$val['content']}
+        </p>
+        {/if}
+        <span class="a3002right_span2">发布时间 {date('Y-m-d',$val['inputtime'])}</span>
+        <hr class="a3002_hr">
+    </div>
+    {/loop} {/pc}
+
+
+</div>
+<div class="a3002right_content1">
+    <h2>信息系统集成的
+        <span>项目管理研究</span>
+    </h2>
+    <div class="a3002left_img">
+        <img src="{CSS_PATH}cms/src/study1.jpg" alt="">
+    </div>
+    <p class="a3002right_p1">随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展随着计算机项目管理研究的不断发展
+
+    </p>
+    <span class="a3002right_span1">技术文章&nbsp;&nbsp; 2017-05-03</span>
+
+
+<hr class="a3002_hr">
+</div>
+
+</div>
+
+
+</div>
+
+
+ {template "content","footer"}

@@ -1,0 +1,44 @@
+{template "content","header"}
+<hr class="a1002_hr"> {template "content","header_min"}
+<div class=" a1001_topright a2002_rightbox">
+        <h1 class="a2002_h1">{$title}</h1>
+        <span>{$inputtime}</span>
+        <hr class="a2002_hr">
+        <div class="a2002_rightbig">
+            <div class="a2002_centerright">
+    
+                <p class="a2002_rightp">{$content}</p>
+            </div>
+            <div class="a2002_rightimg">
+                <img src="{$thumb}" alt="">
+            </div>
+        </div>
+    
+        <div class="a1002_centerrigiht">
+    
+            <div class="a2003_link">
+                <span class="a2003_link1">分享到:</span>
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                </div>
+                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "24" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "weixin", "sqq"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "weixin", "sqq"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+            </div>
+            <div class="a2002_put1">
+                <h2 class="a2002_h2">相关推荐</h2>
+                <br> {pc:content action="lists" catid="$catid" order="id DESC" num="10"} {loop $data $key $val}
+                <span class="a2002_span5">
+                    <a href="{$val['url']}">{$val['title']}
+                    </a>
+                    <span class="a2002_time">{date('Y-m-d',$val['inputtime'])}</span>
+                </span>
+    
+                {/loop} {/pc}
+            </div>
+        </div>
+    </div>
+    </div>
+{template "content","footer"}

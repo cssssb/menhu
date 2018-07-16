@@ -1,0 +1,553 @@
+/* reset */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+
+/* common */
+.max_box{
+    display: block;
+    width: 1280px;
+    margin: auto;
+    
+}
+.font_common{
+    font-family: icon;
+    display: inline-block;
+    font-size: 15px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+}
+.enlishlogo_common{
+    font-family: icon;
+    display: inline-block;
+    font-size: 500px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.common{
+    display: inline-block;
+    width: 1280px;
+    height: 100%;
+}
+.claer_fl{
+    clear: both;
+}
+/* 左侧灰色栏公共样式 */
+.left1_common{
+    margin-left: 14px;
+}
+.password::before{
+    content:'\e005';
+}
+.idinfo::before{
+    content: '\e011';
+}
+/* 标题样式  .csititle_page 统一样式 */
+@font-face {
+    font-family: icon;
+    src: url("../css/font/csi.woff");
+    }
+
+
+.fangda::before{
+    content:'\e003';
+}
+
+.book::before{
+    counter:'' ;
+}
+
+.content1{ 
+    position: relative;
+}
+
+
+ .nav1{
+     
+    /* display: inline-block; */
+
+    background-image: url("../images/img-02.jpg");
+    background-size:1330px 188px; 
+    background-repeat: no-repeat;
+    background-size: cover 1440px 188px;
+   
+    
+}
+/*首页右上角
+*/
+.check1{
+    float: right;
+    height: 38px;
+    width: 700px;
+    
+}
+
+.check1 li{
+    min-width: 60px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+.check1 a{
+    
+    font-size: 14px;
+    width: 54px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+.check1 li:hover{
+    border-bottom:2px solid #fff;
+}
+/*
+nav 主logo
+*/
+/* nav 中间部分 logo+大标题 */
+.middle{
+    width: 1200px;
+    height: 127px;
+    padding: 20px;
+}
+.middle img{
+    float: left;
+        display: inline-block;
+}
+.right{
+    margin: 30px;
+    width: 500px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+.middle p{
+    line-height: 36px;
+    font: 24px "微软雅黑";
+    color: #fff;
+    width: 900px;
+    letter-spacing:3px;
+}
+.middle .english{
+    
+    width: 900px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 0;
+
+}
+/* 查询和input的 div bigger */
+.lookfor{
+    width: 610px;
+    height: 31px;
+    float: right;
+    margin-right: -90px;
+    margin-top: -35px;
+    position: relative;
+
+}
+/* 查询左侧input */
+.top_search{
+
+    width: 367px;
+    height: 30px;
+    z-index: 1;
+    position: absolute;
+    top: -15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+    /* 查询按钮 a */
+.search1{
+    position: absolute;
+    top: -10px;
+    left: 375px;
+
+    color: #fff;
+    
+}
+
+/* nav下边的线 */
+.xian{
+    margin-top: 20px;
+    width: 1300px;
+    font-weight: bold;
+    color:#ccc;
+}
+/* 当前菜单位置 */
+.csi-menu{
+    margin-top: 50px;
+    display: inline-block;
+    width: 90%;
+    margin-left: 50px;
+}
+/*左侧介绍栏 */
+.suggest{
+    display: inline-block;
+    width: 275px;
+    height: 1430px;
+    padding: 30px 15px 0px;
+    margin-left: 30px;
+    margin-top: 50px;
+    background: #ccc;
+    float: left;
+}
+.csi_small_title{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font:24px "黑体";
+    color: #0071bc;
+}
+.csi_small_title::before{
+    font-family: icon;
+    content: '\e007';
+    display: inline-block;
+    font-size: 36px;
+    color: #0071bc;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+.suggest_logo{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 14px;
+}
+.suggest_logo img{
+    display: inline-block;
+    width: 195px;
+    height: 140px; 
+}
+/* 中国联合会标题 */
+.union{
+    width: 290px;
+    display: inline-block;
+    font: 24px "黑体";
+    color: #333;
+    margin-top: 20px;
+}
+/* 电子介绍文章 */
+.csi_dianzi{
+    display: inline-block;
+    margin-top: 20px;
+    font: 14px/1.5 "黑体";
+    color:#333;
+}
+.hot-article{
+    margin-top: 50px;
+}
+/* 热门文章 本周的 本月的 */
+.week_month{
+    display: inline-block;
+    width: 110px;
+    position: relative;
+    top: -6px;
+    left: 40px;
+    height: 30px;
+    line-height: 30px;
+}
+.week_month a{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    font: "14px" "黑体";
+}
+.week_month a:hover{
+    text-decoration: none;
+}
+.this_week{
+    color: #d14f1c;
+}
+
+.article_list{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.article_list a{
+    display: inline-block;
+    line-height: 36px;
+    height: 36px;
+    width: 256px;
+}
+.article_list a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.article_list::before{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #cd0200;
+}
+.article_list span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+    position: relative;
+    top: 26px;
+    left: -23px;
+}
+.top_num1{
+    background: #d14f1c;
+    display: block;
+
+
+}
+.top_num2{
+    background: #929293;
+}
+/* 热门标签 */
+.csi—labels{
+    display: inline-block;
+    width: 290px;
+    height: 260px;
+
+    margin-top: 30px;
+}
+.csi—labels a{
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid #929293;
+    margin-right: 5px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font: 14px "黑体";
+
+}
+.csi—labels a:hover{
+   text-decoration: none;   
+}
+/* 右侧文章段落 */
+/* 大盒子 */
+.article_right{
+    float: left;
+    display: block;
+    width: 842px;
+    margin: 50px 50px 0px;
+}
+.bigtitle{
+    display: block;
+    height: 35px;
+    left: 30px;
+    font:24px "黑体";
+    width: 500px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.real_time{
+    display: block;
+    margin-bottom: 20px;
+}
+.csi-xian{
+    display: block;
+    color: #0071bc;    
+    margin-bottom: 20px;
+}
+.csi-diaoyan{
+    display: block;
+    width: 370px;
+    font: 14px/1.5 "黑体";
+    float: left;
+    margin-bottom: 5px;
+}
+.diaoyan-img{
+    display: block;
+    width: 460px;
+    height:280px;
+    float: left;
+}
+.yuanhovers{
+    float: right;
+    display: block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin:10px 10px 0px;
+}
+.yuan_btn{
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #0071bc;
+    text-align: center;
+    line-height: 14px;
+    float: left;
+    margin-right: 5px;
+}
+.yuan_btn:hover{
+    text-decoration: none;
+}
+/* 文章内容部分 */
+.content_center{
+    display: block;
+    font: 14px "黑体";
+    line-height: 20px;
+    width: 842px;
+    height: 90px;
+
+
+}
+/* 一篇文章中心部分 */
+.article_center{
+    float: left;
+    display: block;
+    width: 842px;
+    /* height: 300px; */
+    position: relative;
+    top: 30px;
+}
+/* 阅读栏 带右侧大图 */
+.readpage{
+    display: block;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+/* 文章栏目  */
+.readpage img {
+    display: block;
+    width: 500px;
+    height: 300px;
+}
+/* 文章2 */
+.art1{
+    position: relative;
+
+}
+/* 文章3 */
+.art2{
+    position: relative;
+    top: 370px;
+
+}
+/* 文章4 */
+.art3{
+    position: relative;
+    top: 380px;
+
+}
+/* 右侧中间图文介绍 */
+.tuwen{
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font:14px "黑体";
+}
+/* 分享链接模块 */
+.share{
+    display: block;
+    height: 30px;
+    position: relative;
+    top: 420px;
+}
+.share img{
+    display: block;
+    height: 50px;
+    
+}
+.share span{
+    float: left;
+
+}
+.share a{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+
+
+    position: relative;
+    top: -8px;
+    margin: 0 10px;
+}
+/* 分享链接logo */
+.link1{
+    background-size: 30px 30px;
+    background-image: url("../images/mateimg/mate1.jpg");
+}
+a.link1:hover{
+    background-image: url("../images/mateimg/mate6.jpg");
+} 
+ .link2{
+    background-size: 30px 30px;
+    background-image: url("../images/mateimg/mate2.jpg");
+}
+a.link2:hover{
+    background-image: url("../images/mateimg/mate7.jpg");
+} 
+.link3{
+    background-size: 30px 30px;
+    background-image: url("../images/mateimg/mate3.jpg") ;
+}
+a.link3:hover{
+    background-image: url("../images/mateimg/mate8.jpg");
+} 
+.link4{
+    background-size: 30px 30px;
+    background-image: url("../images/mateimg/mate4.jpg") ;
+}
+a.link4:hover{
+    background-image: url("../images/mateimg/mate9.jpg");
+} 
+.share .link5{
+    float: right;
+    background-size: 30px 30px;
+    background-image: url("../images/mateimg/mate5.jpg") ;
+}
+a.link5:hover{
+    background-image: url("../images/mateimg/mate10.jpg");
+} 
+
+/* 相关推荐部分 */
+.jieshao{
+
+    position: relative;
+    top: 465px;
+    left: -255px;
+}
+.jieshao_list{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 510px;
+}
+.jieshao_list a{
+    display: block;
+    width: 100%;
+    font:14px/1.5 "黑体";
+}
+.jieshao_list a:hover{
+    text-decoration: none;
+}
+.jieshao_list span{
+    float: right;
+}

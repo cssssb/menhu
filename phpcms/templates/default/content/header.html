@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    {pc:content action="category" siteid="$siteid" } 
+    <title>{$catname}</title>
+     {/pc}
+    <link rel="stylesheet" href="{CSS_PATH}cms/css//bootstrap.css">
+    <link rel="stylesheet" href="{CSS_PATH}cms/css/first_style.css">
+    <script src="{CSS_PATH}cms/js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- nav部分 -->
+        <!-- 顶部导航栏table -->
+        <div class="row a1001_nav">
+            <img src="{CSS_PATH}cms/src/img-02.jpg" alt="" class="a1001_topimg">
+            <div class="col-md-6 a1001_top_title">
+                {pc:content action="category" num="25" siteid="$siteid" order="listorder ASC"} {loop $data $r}
+                <a href="{$r[url]}">
+                    <li>{$r[catname]}</li>
+                </a>
+                {/loop} {/pc}
+
+            </div>
+        </div>
+        <!-- 顶部logo区域 -->
+        <div class="row a1001big_logo">
+            <img src="{CSS_PATH}cms/src/logo_02.png" alt="">
+            <div class="a1001_bigtitle">
+                <span class="a1001_logotitle">
+                    信息系统集成及服务项目管理人员学习平台
+                </span>
+                <br />
+                <span class="a1001_logoenglish">
+                    Information system integration and service project management learning platform
+                </span>
+            </div>
+        </div>
+        <span class="a3001_menu">
+            <a href="{WEB_PATH}">首页</a>
+
+            {pc:content action="category" num="25" siteid="$siteid"}
+            <a href="{catpos($url)">
+                <?php echo'<span>></span>'.catpos($catid);?>
+            </a>
+            {/pc} {pc:content action="lists" num="25" catid="$catid" siteid="$siteid"}
+            <a href="{$url}">{$title}</a>
+            {/pc}
+        </span>
+        <!-- 顶部搜索框 -->
+        <!-- <div class="row a1001_search">
+            <div class=" a1001_searchdiv">
+                <input type="search">
+                <a href="#">查询</a>
+            </div>
+        </div> -->

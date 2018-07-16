@@ -1,0 +1,111 @@
+{template "content","header"}
+<hr class="a1002_hr"> {template "content","header_min"}
+<div class=" a1001_topright">
+    <div class="a1002_table">
+        <a href="#" class="a1002_a1">平台通知</a>
+        <a href="#" class="a1002_a2">项目经理</a>
+        <a href="#" class="a1002_a3">高级项目经理</a>
+        <a href="#" class="a1002_a4">运营项目经理</a>
+
+    </div>
+        <div class="a1002_tabs a1002_tab2">
+                <div class="a1002tab_list1">
+                        <h2 class="a1002_midtitle a1002_midtitle1">考核方式</h2>
+                        <h2 class="a1002_midtitle a1002_midtitle1">考核方式2</h2>
+                        {pc:content action="lists" catid="23" order="id DESC" num="10"} {loop $data $key $val}
+                        <a href="{$val['url']}">
+                            <span class="a1002_spantri a1002_spantri1"> {$val['title']} </a>
+                        </span>{/loop} {/pc}
+                        <!-- <span class="a1002_spantri a1002_spantri2">实践课程操作指南</span> -->
+                        </div>
+            </div>
+            <div class="a1002_tabs a1002_tab3">
+                <h2 class="a1002_h2">项目经理</h2>
+
+                <div class="a1002tab_list1">
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式</h2>
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式2</h2>
+                    {pc:content action="lists" catid="24" order="id DESC" num="10"} {loop $data $key $val}
+                    <a href="{$val['url']}">
+                        <span class="a1002_spantri a1002_spantri1"> {$val['title']} </a>
+                    </span>{/loop} {/pc}
+                </div>
+            </div>
+            <div class="a1002_tabs a1002_tab4">
+                <h2 class="a1002_h2">高级项目经理</h2>
+
+                <div class="a1002tab_list1">
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式</h2>
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式2</h2>
+                    {pc:content action="lists" catid="25" order="id DESC" num="10"} {loop $data $key $val}
+                    <a href="{$val['url']}">
+                        <span class="a1002_spantri a1002_spantri1"> {$val['title']} </a>
+                    </span>{/loop} {/pc}
+                </div>
+            </div>
+            <div class="a1002_tabs a1002_tab5">
+                <h2 class="a1002_h2">运营项目经理</h2>
+
+                <div class="a1002tab_list1">
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式</h2>
+                    <h2 class="a1002_midtitle a1002_midtitle1">考核方式2</h2>
+                    {pc:content action="lists" catid="26" order="id DESC" num="10"} {loop $data $key $val}
+                        <a href="{$val['url']}">
+                            <span class="a1002_spantri a1002_spantri1"> {$val['title']} </a>
+                        </span>{/loop} {/pc}
+                </div>
+    </div>
+</div>
+
+<div class="a1002_centerrigiht">
+    <h2 class="a1002_h2">常见问题</h2>
+    <div class="a1003_div6">
+            {pc:content action="lists" thumb="1" catid="20" order="id DESC" num="6"} {loop $data $key $val}
+
+            <a href="{$val['url']}" class="a1003_6div">
+                <div class="a1003_imgon">
+                    <img src="{$val[thumb]}" alt="">
+                </div>
+                <span class="a1003_span1">{$val['title']}</span>
+                <span class="a1003_span2">{$val['data']}</span>
+                <span class="a1003_span3">北京</span>
+            </a>
+            {/loop} {/pc}
+        </div>
+        <div class="a1003_imgp">
+            <h2 class="a1002_h2">相关下载</h2>
+            <div class="a1003_lastbottom">
+                {pc:content action="lists" thumb="1" catid="21" order="id ASC" num="1"} {loop $data $key $val}
+                <div class="a1003_bottomimg">
+                    <img src="{$val[thumb]}" alt="">
+                </div>
+                <h3 class="a1003_bottomh3">{$val['title']}</h3>
+                <p>{$key[content]}
+                </p>
+
+            </div>
+            {/loop} {/pc}
+            <div class="a1003_bottomp">
+                {pc:content action="lists" catid="21" order="id DESC" num="10"} {loop $data $key $val}
+                <span class="a1002_spantri">
+                    <a href="{$val['url']}">{$val['title']}</a>
+                </span>
+                {/loop} {/pc}
+            </div>
+        </div>
+        <div class="a1003_about">
+            <h2 class="a1002_h2">关于我们</h2>
+            {pc:content action="relation" catid="27" order="id DESC" num="10"} {loop $data $key $val}
+            <span class="a1002_spantri">
+                <a href="{$val['url']}">{$val['title']}</a>
+            </span>
+            {/loop} {/pc}
+        </div>
+    </div>
+</div>
+
+
+</div>
+{template "content","footer"}
+<script src="{CSS_PATH}cms/js/first.js">
+</script>

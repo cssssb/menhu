@@ -1,0 +1,661 @@
+/* reset */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+
+a:hover{
+    text-decoration: none;
+}
+/* common */
+.box_center{
+    display: block;
+    width: 1280px;
+    margin: auto;
+}
+.font_common{
+    font-family: icon;
+    display: inline-block;
+    font-size: 15px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+}
+.enlishlogo_common{
+    font-family: icon;
+    display: inline-block;
+    font-size: 500px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.common{
+    display: inline-block;
+    width: 1280px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.password::before{
+    content:'\e005';
+}
+.idinfo::before{
+    content: '\e011';
+}
+/* 标题样式  .csititle_page 统一样式 */
+
+
+@font-face {
+    font-family: icon;
+    src: url("../css/font/csi.woff");
+    }
+
+
+.fangda::before{
+    content:'\e003';
+}
+
+.book::before{
+    counter:'' ;
+}
+
+.content1{ 
+    position: relative;
+}
+
+
+ .nav1{
+     
+    /* display: inline-block; */
+
+    background-image: url("../images/img-02.jpg");
+    background-size:1330px 188px; 
+    background-repeat: no-repeat;
+    background-size: cover 1440px 188px;
+   
+    
+}
+/*首页右上角
+*/
+.check1{
+    float: right;
+    height: 38px;
+    width: 700px;
+    
+}
+.claer_fl{
+    clear: both;
+}
+.check1 li{
+    min-width: 60px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+.check1 a{
+    
+    font-size: 14px;
+    width: 54px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+.check1 li:hover{
+    border-bottom:2px solid #fff;
+}
+/*
+nav 主logo
+*/
+/* nav 中间部分 logo+大标题 */
+.middle{
+    width: 1200px;
+    height: 127px;
+    padding: 20px;
+}
+.middle img{
+    float: left;
+        display: inline-block;
+}
+.right{
+    margin: 30px;
+    width: 500px;
+    height: 80px;
+    display: inline-block;
+    float: left;
+}
+.middle p{
+    line-height: 36px;
+    font: 24px "微软雅黑";
+    color: #fff;
+    width: 900px;
+    letter-spacing:3px;
+}
+.middle .english{
+    
+    width: 900px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 0;
+
+}
+/* 查询和input的 div bigger */
+.lookfor{
+    width: 610px;
+   height: 31px;
+    float: right;
+    margin-right: -90px;
+    margin-top: -35px;
+    position: relative;
+
+}
+/* 查询左侧input */
+.top_search{
+
+    width: 367px;
+    height: 30px;
+    z-index: 1;
+    position: absolute;
+    top: -15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+    /* 查询按钮 a */
+.search1{
+    position: absolute;
+    top: -10px;
+    left: 375px;
+    font-size: 14px;
+    color: #fff;
+    
+}
+/* nav下边的线 */
+.xian{
+    margin-top: 20px;
+    width: 1300px;
+    font-weight: bold;
+    color:#ccc;
+}
+/* 登陆系统 */
+.table1{
+    border: 1px solid #ccc;
+    width: 320px;
+    height: 380px;
+    
+}
+
+/* 登陆主表格 */
+.table {
+    margin-top: 45px;
+    width: 290px;
+    height: 380px;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+.table_th {
+    border-width: 1px;
+    margin-left: 15px;
+    border-style: solid;
+    height: 70px;
+    width: 290px;
+    text-align: center;
+    border: 0px;
+   
+    
+}
+.table_th div{
+    display: inline-block;
+    width: 290px;
+    height: 73px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+
+}
+.table_th span{
+    display: inline-block;
+    width: 120px;
+    height:50px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    
+    padding-top: 23px;
+}
+.table_td1 {
+    border: 0;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+    position: relative;
+}
+.table tr {
+    border-width: 1px;
+}
+.land_common{
+    display: inline-block;  
+    padding-left: 32px;
+}
+.land_search{
+    
+    width: 290px;
+    height: 34px;
+}
+.land_search1{
+
+    width: 170px;
+    height: 34px;
+}
+.land_btn{
+    padding: 0;
+    width: 290px;
+    height: 34px;
+    background-color: #0071bc;
+    text-align: center;
+    font-size: 14px "黑体";
+    color: #fff
+}
+.land_checkbox{
+    display: inline-block;
+    position: absolute;
+    top:15px;
+}
+.checkbox_font{
+    margin-left: 15px;
+    color: #929293;
+}
+.qustion{
+    display: inline-block;
+    width: 180px;
+    float: right;
+    text-align: right;
+    min-width: 120px;
+}
+.forget_psd{
+    display: inline-block;
+    color:#929293;
+    width: 60px;
+}
+/* compontent */
+
+
+/* 标题栏 */
+.csi-title{
+    position: relative;
+    display: block;
+    left: -25px;
+    font-size: 24px;
+    line-height: 1.5;
+    padding:3px 0 0rem 4rem;
+    margin-bottom: 20px;
+
+}
+
+.csi-title::before{
+  
+    content: '\e009';
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size:4rem;
+    font-weight: 100;
+    font-family: icon;
+    display: inline-block;
+    color: #0071bc;
+}
+.csi-title::after{
+    margin-left: -15px;
+    content:'\e007';
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-weight: 100;
+    font-family: icon;
+    display: inline-block;
+    color: #0071bc;
+}
+
+.csititle_span{
+    display: block;
+    position: relative;
+    top: -40px;
+    left: 66px;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* 小三角样式 */
+.csi_tri{
+    display: block;
+    font-family: icon;
+    height: 36px;
+    width: 500px;
+    margin-left: 70px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+.csi_tri:hover{
+    text-decoration: none;
+
+}
+.csi_tri::before{
+    content: '\e010';
+    font-size: 14px;
+    color: #0071bc;
+    line-height: 36px;
+    left: -10px;
+    margin-left: -15px;
+    position: relative;
+    top: 2px;
+    left: -10px;
+}
+.csi_tri a{
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0;
+    font:14px "黑体";
+}
+.csi-tri:hover{
+    text-decoration: none;
+}
+.csi—single{
+    padding-left: 15px;
+    margin-left: 20px;
+}
+/* 标题栏 不带十字符号 */
+.csi-single::before{
+    content:'\e007';
+    font-size: 2rem;
+    position: relative;
+    top: 9px;
+    margin-left: 20px;
+    left: 16px;
+    font-weight: 100;
+    font-family: icon;
+    display: inline-block;
+    color: #0071bc;
+}
+/* 报名三个 a 标签css样式 */
+.enlish{
+    display: inline-block;
+    width: 232px;
+    height: 50px;
+    font:24px/50px "黑体";
+    color: #fff;
+    text-align: left;
+    padding-left: 58px;
+    background: #0071bc;
+    margin:20px auto auto 32px;
+
+}
+/* 鼠标悬浮 a 颜色无变化  */
+.enlish:hover{
+   color:#fff;
+   text-decoration: none;
+}
+/*  logo */
+.enlish::before{
+    font-size: 24px;
+    font-family: icon;
+    position: relative;
+    top: 3px;
+    left: -53px;
+    margin-right: -30px;
+}
+/* logo产品. 运维.证书 */
+.prodect::before{
+    content:'\e001';
+    font-family: icon;
+    position: relative;
+    top: 2px;
+    left: -20px;
+}
+.operation::before{
+    content:'\e006';
+    font-family: icon;
+    position: relative;
+    top: 4px;
+    left: -16px;
+}
+.idbook::before{
+    content:'\e012';
+    font-family: icon;
+    position: relative;
+    top: 4px;
+    left: -16px;
+}
+/* 报名入口 */
+.enroll_enter{
+    display: inline-block;
+    width: 306px;
+    margin-top: 80px;
+    margin-left: 20px;
+    float: left;
+}
+
+.enroll{
+    background:#0071bc;
+    display: inline-block;
+    width: 305px;
+    height: 50px;
+    font:24px "黑体";
+    line-height: 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+/* 行业动态 */
+.dongtai{
+    display: inline-block;
+    background-color: #ccc;
+    width: 290px;
+    margin-left: -304px;
+    margin-top: 400px;height: 1000px;
+    padding-left: 15px;
+}
+.dongtai img{
+    display: inline-block;
+    width: 275px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.bgfont{
+    display: inline-block;
+    background-color:#000;
+    font: 16px "黑体";
+    text-align: center;
+    width: 275px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0.5;
+    position: relative;
+    top: -60px;
+    left: 0;
+    color: #fff;
+}
+/* 行业动态新闻 */
+.csi-time{
+    margin-left: 20px;
+    border: none; 
+    color: #0071bc;
+    width: 275px;
+}
+.csi-dongtai{
+    display: inline-block;
+    line-height: 20px;
+    color:#0071bc;
+}
+.csi-dongtai:hover{
+    
+    text-decoration: none;
+}
+.fontcolor{
+   color: #0071bc;
+   margin: 0;
+}
+.black{
+    color: #000;
+    display: inline-block;
+    line-height: 20px;
+    width: 275px;
+}
+.black:hover{
+    
+    text-decoration: none;
+}
+.reblack{
+    width: 275px;
+    margin-left: 20px;
+    color: #000;
+}
+.news_content{
+    display: inline-block;
+    width: 260px;
+    color: #0071bc;
+    font:14px "黑体";
+    height: 20px;
+    line-height: 20px;    
+}
+.news_content1{
+    color:#000;  
+}
+.middle_right{
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left:388px;
+    top: 40px;
+}
+.methods{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.methods::before{   
+    display: none;
+}
+.csi-fontsize{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.good_lesson{
+    margin-bottom: 40px;
+}
+.kecheng{
+    display: inline-block;
+    width: 247px;
+    height: 247px;
+    margin:0 0 30px 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.lesson_img{
+    margin-top: 3px;
+    display: inline-block;
+    width: 240px;
+    height: 167px;
+}
+.lesson_img img{
+    display: inline-block;
+    width: 240px;
+    height: 167px;
+}
+.kecheng span{
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0071bc;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: initial;
+
+}
+.kecheng a{
+    display: inline-block;
+    width: 114px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+/* 技术文章 */
+.csi_article{
+    margin-top: 50px;
+}
+/* 左侧图片set */
+.article_news{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.news_img{
+    float: left;
+    display: inline-block;
+    width: 247px;
+    height: 174px;
+}
+.news_img img{
+    display: inline-block;
+    width: 247px;
+    height: 174px;
+}
+/* 右侧标题 及文字 */
+.news_stage{
+    margin-bottom: 20px;
+}
+.news_stage a{
+    margin-left: 20px;
+    display: inline-block;
+    height: 30px;
+    width: 500px;
+    line-height: 30px;
+    font: 20px "黑体";
+    color: #0071bc;
+    font-weight: bold;
+    text-decoration: none;
+}
+.news_stage p{
+    font: 1em/1.5 "黑体";
+    display: inline-block;
+    width: 525px;
+    margin-left: 20px;
+}
+.place{
+    margin-left: 41px;
+}
+.small_title{
+    margin-left: 41px;
+}
+.prodect_bottom{
+   
+    display: inline-block;
+    width: 1800px;
+    height: 300px;
+    background: #ccc;
+    margin-top: 200px;
+}

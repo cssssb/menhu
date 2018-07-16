@@ -1,0 +1,11 @@
+{template "content","header"} 
+{template "content","header_min"} 
+
+{pc:content action="relation" relation="$relation" catid="$catid" num="20" keywords="$rs[keywords]"}
+{loop $data $r}
+    <li><span>({date('m-d',$r[inputtime])})</span>·<a href="{$r[url]}" target="_blank">{$r[title]}</a></li>
+{/loop}
+{/pc}
+
+
+{template "content","footer"} 
